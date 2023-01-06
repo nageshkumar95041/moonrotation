@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+           
+        }
+        .earth img{
+            width: 100px;
+            border-radius: 50%;
+        }
+        .moon img{
+            width: 50px;
+            border-radius: 55%;
+            
+        }
+        .moon{
+           animation: gif 6s ease-in infinite;
+           animation-delay: 0;
+        }
+
+        
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 500px;
+        position: relative;
+        
+
+    }
+    @keyframes gif{
+        0%{
+         position: absolute;
+         top:0;
+         left: 0;
+        }
+        33%{
+           top: 400px;
+           left: 300px;
+         
+           
+        }
+        66%{
+            visibility: hidden;
+        }
+     
+        100%{
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="earth"><img src="./earth.jpg" alt=""></div>
+            <div class="moon"><img src="./moon.jpeg" alt=""></div>
+
+        </div>
+    </div>
+</body>
+</html>
